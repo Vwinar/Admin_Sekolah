@@ -1,4 +1,4 @@
-# Sistem Informasi Sekolah Terpadu (Eduvay - Warukulon)
+# Sistem Informasi Sekolah Terpadu (Eduvay)
 
 Sistem Informasi Sekolah Terpadu (Eduvay) adalah platform manajemen sekolah cerdas berbasis web yang dirancang khusus untuk mempermudah kegiatan administrasi, pencatatan absen, serta dokumentasi pembelajaran. 
 
@@ -22,7 +22,7 @@ Aplikasi ini sangat praktis karena **menggunakan SQLite sebagai databasenya**. A
 Karena aplikasi ini menggunakan **SQLite**, proses *deployment* ke cPanel atau hosting manapun sangatlah cepat. Berikut adalah panduannya:
 
 ### 1. Persiapan File
-1. Jadikan seluruh folder `warukulon` (tempat file `index.php` berada) menjadi satu file berformat `.zip`.
+1. Jadikan seluruh folder `xxxx` (tempat file `index.php` berada) menjadi satu file berformat `.zip`.
 
 ### 2. Upload ke cPanel / Shared Hosting
 1. Login ke panel hosting Anda (misal: **cPanel**).
@@ -30,7 +30,7 @@ Karena aplikasi ini menggunakan **SQLite**, proses *deployment* ke cPanel atau h
 3. Navigasikan ke direktori **`public_html`** (atau direktori domain/subdomain yang Anda inginkan).
 4. Klik tombol **Upload**, lalu pilih file `.zip` yang sudah Anda siapkan tadi.
 5. Setelah proses upload selesai, klik kanan pada file `.zip` tersebut dan pilih **Extract**.
-6. Pindahkan file-file dari dalam folder `warukulon` langsung ke dalam `public_html` (jika Anda ingin aplikasi diakses lewat domain utama).
+6. Pindahkan file-file dari dalam folder `xxx` langsung ke dalam `public_html` (jika Anda ingin aplikasi diakses lewat domain utama).
 
 ### 3. Konfigurasi Permission (Sangat Penting untuk SQLite)
 Database SQLite berupa sebuah file fisik, sehingga web server (PHP) membutuhkan izin untuk **Membaca (Read)** dan **Menulis (Write)** pada file database tersebut *beserta folder tempatnya berada*.
