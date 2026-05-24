@@ -1,0 +1,19 @@
+# BASIC SECURITY
+Options -Indexes
+RewriteEngine On
+
+# Protect htaccess
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Custom error pages
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Increase upload size (jika ada masalah upload)
+<IfModule mod_php.c>
+    php_value upload_max_filesize 32M
+    php_value post_max_size 32M
+</IfModule>
